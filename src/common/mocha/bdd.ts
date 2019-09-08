@@ -15,19 +15,6 @@ module.exports = Mocha.interfaces['simple-ui'] = function(suite) {
         it.beta = () => {}; // Additional function
         // ... Additional extension methods
 
-        context.it = context.specify = it;
-        // context.run = mocha.options.delay && common.runWithSuite(suite);
-
-        // /**
-        //  * Describes a specification or test-case with the given `title`
-        //  * and callback `fn` acting as a thunk.
-        //  */
-        // context.test = function(title, fn) {
-        //   var test = new Test(title, fn);
-        //   test.file = file;
-        //   suite.addTest(test);
-
-        //   return test;
-        // };
+        context.it = it;
     });
 };
